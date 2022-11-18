@@ -1,14 +1,19 @@
 package Home_work;
 
-public class Hostel extends Person implements Family{
+public class Hostel extends Home{
     public Hostel(String address, int personNumber) {
         super(address, personNumber);
     }
 
 
+    @Override
+    public void method() {
+        super.method();
+    }
 
     @Override
     public void publicService() {
+        System.out.println("Public service: No");
 
     }
 

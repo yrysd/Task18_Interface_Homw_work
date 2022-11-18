@@ -1,14 +1,19 @@
 package Home_work;
 
-public class Person  {
+public abstract class Home implements Family{
+
     public String address;
     public int PersonNumber;
 
-    public Person(String address, int personNumber) {
+    public Home(String address, int personNumber) {
         this.address = address;
         PersonNumber = personNumber;
     }
 
+    public void method(){
+        System.out.println("Address: "+getAddress());
+        System.out.println("Person number: "+getPersonNumber());
+    }
     public String getAddress() {
         return address;
     }
@@ -24,4 +29,5 @@ public class Person  {
     public void setPersonNumber(int personNumber) {
         PersonNumber = personNumber;
     }
+
 }
